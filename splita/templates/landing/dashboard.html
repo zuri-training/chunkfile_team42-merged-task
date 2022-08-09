@@ -12,8 +12,8 @@
         <link href="{% static 'landing\splita_icon\style.css' %}" rel="stylesheet">
 
         <script src="{& static }"></script>
-    <script src="https://kit.fontawesome.com/c423e479ae.js" crossorigin="anonymous"></script>
-    <script defer src="{% static 'landing\javascript\dashboard.js' %}"></script>
+        <script src="https://kit.fontawesome.com/c423e479ae.js" crossorigin="anonymous"></script>
+        
 
     </head>
     <body>
@@ -121,7 +121,10 @@
                                 <img src="{% static 'landing\img\user_arrow.png' %}" class= "user_arrow"alt="Arrow Down image">
                             </button>
                             <div class="dropdown-content">
-                              <a href="#">Logout</a>
+                                <a href="#">Edit Profile</a>
+                                <a href="#">Help</a>
+                                <a href="#">Settings</a>
+                                <a href="#" class="logout_dropdown">Logout</a>
                             </div>
                           </div> 
                     </div>
@@ -174,14 +177,14 @@
                     </div>
                     <!-- White and Aside wrap ended -->
                     <!--  Chunk button alone sec -->
-                    <button class="chunk_btn"><a href="/landing/authTable" style="text-decoration: none; color:#060CA1;">CHUNK</a></button>
+                    <button class="chunk_btn"><a href="#" class= "lead_link" style="text-decoration: none; color:#fff;">CHUNK</a></button>
                     
                 </div>
                 <!-- main content started ended -->
             </div>
         </div>
         <!-- container wrapping all content ended -->
-        <script src="./dashboard.js"></script>
+        <script defer src="{% static 'landing\javascript\dashboard.js' %}"></script>
     </body>
     
 </html>

@@ -87,6 +87,7 @@ function dropHandler(ev) {
     for (let i = 0; i < ev.dataTransfer.items.length; i++) {
       // If dropped items aren't files, reject them
       if (ev.dataTransfer.items[i].kind === 'file') {
+        
         const file = ev.dataTransfer.items[i].getAsFile();
         console.log(`… file[${i}].name = ${file.name}`);
         // move()
@@ -102,10 +103,14 @@ function dropHandler(ev) {
 
       function onAnimationComplete(e){
       if(e.animationName==='progressBar'){
-      console.log("progress-animation ended")
-      let html
-      html =` <p class="main_p">File Name: ${file.name} </p>`
-      document.getElementById('drop_zone').innerHTML = html
+        const chunkBtn = document.querySelector('.chunk_btn')
+        chunkBtn.setAttribute('class', 'btn_authen')
+
+        console.log("progress-animation ended")
+      
+        let html
+        html =` <p class="main_p">File Name: ${file.name} </p>`
+        document.getElementById('drop_zone').innerHTML = html
   }
 
         
@@ -116,6 +121,8 @@ function dropHandler(ev) {
     // Use DataTransfer interface to access the file(s)
     for (let i = 0; i < ev.dataTransfer.files.length; i++) {
       console.log(`… file[${i}].name = ${ev.dataTransfer.files[i].name}`);
+      const chunkBtn = document.querySelector('.chunk_btn')
+      chunkBtn.setAttribute('class', 'btn_authen')
       let html
       html =` <p class="main_p">File Name: ${ev.dataTransfer.files[i].name} </p>`
       document.getElementById('drop_zone').innerHTML = html
@@ -149,6 +156,12 @@ addFile = function() {
 
       function onAnimationComplete(e){
         if(e.animationName==='progressBar'){
+          const chunkBtn = document.querySelector('.chunk_btn')
+          chunkBtn.setAttribute('class', 'btn_authen')
+
+          leadLink = document.querySelector('.lead_link')
+          leadLink.href = "/authTable"
+
           console.log("progress-animation ended")
       for (var i = 0; i < input.files.length; i++) {
       let html

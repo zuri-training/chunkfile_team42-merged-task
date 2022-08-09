@@ -9,7 +9,7 @@ body{
     font-size: 14px;
     background-color: #F5F5F5;
     font-family: 'Manrope', sans-serif;
-    max-height:fit-content;
+    /* max-height:fit-content; */
 }
 
 .big_container{
@@ -76,7 +76,7 @@ body{
 
 
 .log_out{
-    margin: 25rem 0 8rem 5px;
+    margin: 32rem  0 8rem 5px;
 }
 
 .left_link:active{
@@ -196,10 +196,28 @@ body{
     justify-content: center;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
-    min-width: 170px;
+    min-width: 164px;
+    background-color: #fff;
+    margin-left: -9.9rem;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5px;
+    margin-top: 12px;
+    color: #1F1F1F;
+    border-radius: 8px;
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);
+}
+
+.dropdown-content a{
+    margin: 18px 0 18px 0;
+}
+
+.logout_dropdown{
+    margin-top: 70px !important;
+    color: #F00A0A !important;
 }
 
 .dropdown:active .dropdown-content{
@@ -258,6 +276,7 @@ body{
 .main_p{
     font-weight: 500;
     color: #000;
+    margin: 3rem 0;
 }
 
 .blue_p{
@@ -292,8 +311,8 @@ body{
 }
 .break_line_rectangle{
     max-width: 100%;
-    height: 85%;
-    padding: 2rem 0 4rem;
+    height: 75%;
+    padding: 5rem 0;
     font-weight: 500;
     font-size: 20px;
     cursor: pointer;
@@ -302,9 +321,8 @@ body{
     border-radius: 8px;
 
 }
-.break_line_rectangle form{
-    margin-top: 5rem;
-}
+/* .break_line_rectangle form{
+} */
 
 .break_line_content{
     margin: -5.5rem;
@@ -545,6 +563,17 @@ aside{
         padding: 7rem 0 2rem 2rem;
     }
 
+    .btn_authen{
+        background-color: #080FC9;
+        border: none;
+        border-radius: 8px;
+        padding: 16px 8rem;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        margin: 4rem 16rem;
+      }
+
 }
 
 /* For tablets */
@@ -784,7 +813,7 @@ aside{
     }
 
     .grey_capital {
-        padding-bottom: 3rem;
+        /* padding-bottom: 3rem; */
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -1063,8 +1092,8 @@ aside{
 
     }
 
-    .log_out{
-        margin: 25.5rem 0 8rem 10px;
+    .log_out {
+        margin: 31rem 0 8rem 10px;
     }
 
     .big_container{
@@ -1207,8 +1236,8 @@ aside{
 
     }
 
-    .log_out{
-        margin: 27rem 0 8rem 5px;
+    .log_out {
+        margin: 30.5rem 0 8rem 5px;
     }
 
     .btn_authen {
@@ -1378,6 +1407,7 @@ aside{
         width: 40%;
         margin: 10px auto 0;
         line-height: 24px;
+        
     }
 
     .white_aside_wrap {
@@ -1395,7 +1425,7 @@ aside{
         font-weight: 500;
         font-size: 14px;
         color: #000000;
-        padding: 2rem 0 5rem;
+        padding: 5rem 0;
     }
 
     .upload_text {
@@ -1429,7 +1459,6 @@ aside{
     }
 
     .grey_capital {
-        padding-bottom: 3rem;
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -1551,7 +1580,7 @@ aside{
     }
 
     .log_out {
-        margin: 31.5rem 0 8rem 5px;
+        margin: 27.5rem 0 8rem 5px;
     }
 
 }
@@ -1609,6 +1638,9 @@ aside{
 
 @media(max-width: 360px){
 
+    .log_out {
+        margin: 21.5rem 0 8rem 5px;
+    }
     .main_content {
         margin: 0 23px 4rem 23px;
     }
@@ -1633,9 +1665,8 @@ aside{
 
     .break_line_rectangle {
         font-size: 14px;
-        padding: 1rem 0 3rem;
+        padding: 3rem 0 3rem;
     }
-
     .chunk_btn {
         padding: 20px 8.1rem;
     }
@@ -1654,7 +1685,7 @@ aside{
     }
 
     .log_out {
-        margin: 32rem 0 8rem 5px;
+        margin: 22rem 0 8rem 5px;
     }
 
     .top{
@@ -1864,13 +1895,7 @@ td{
 }
 
 @media(max-width: 425px) {
-    body{
-        background-color: #fff;
-    }
-    .main{
-        background-color: #fff;
-    }
-
+    
     .main_authen3 {
         margin: 2.5rem 0rem 0rem 1.5rem;
         width: 88%;
